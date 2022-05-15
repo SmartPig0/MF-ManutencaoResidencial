@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <title>MF Manutenção residnecial, faz tudo 24 horas</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -14,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" class="css">
     </head>
     <body>
         <!-- 
@@ -30,7 +32,7 @@
                 <span class="fs-4">M&F Serviços</span>
               </a>
         
-              <ul class="nav nav-pills">
+              <ul class="nav nav-pills nav-header">
                 <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Sobre Nós</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Pintura e Reforma</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Elétrica e Hidráulica</a></li>
@@ -42,13 +44,14 @@
 
         <!-- Masthead-->
         <header class="masthead">
+         
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
                         <div class="text-center text-white">
-                            <!-- Page heading-->
-                            <h1 class="mb-5">SERVIÇO DE QUALIDADE E COMPRIMISSO COM O CLIENTE</h1>
-                            <h3 class="mb-5">Digite resumidamente o seu problema e enviaremos seu orçamento em breve</h3>
+                           <!-- Page heading-->
+                            <h1 class="mb-5 animate__animated animate__backInLeft">SERVIÇO DE QUALIDADE</h1><h1 class="animate__animated animate__backInLeft animate__delay-1s">E COMPRIMISSO COM VOCÊ, NOSSO CLIENTE</h1>
+                            <h3 class="mb-5 animate__animated animate__backInLeft animate__delay-2s">Digite resumidamente o seu problema e enviaremos seu orçamento em breve</h3>
                             <!-- Signup form-->
                             <!-- * * * * * * * * * * * * * * *-->
                             <!-- * * SB Forms Contact Form * *-->
@@ -60,12 +63,9 @@
                             <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
                                 <!-- Email address input-->
                                 <div class="row">
-                                    <div class="col">
-                                        <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Do que você precisa ?" data-sb-validations="required,email" />
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                                    </div>
-                                    <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">QUERO UM ORÇAMENTO</button></div>
+                                    <textarea class="form-control m-1" id="text-form-header" placeholder="Deixe seu contato e um breve resumo do serviço que deseja..." rows="3"></textarea>
+                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                                    <div class="col"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">QUERO UM ORÇAMENTO</button></div>
                                 </div>
                                 <!-- Submit success message-->
                                 <!---->
@@ -73,22 +73,20 @@
                                 <!-- has successfully submitted-->
                                 <div class="d-none" id="submitSuccessMessage">
                                     <div class="text-center mb-3">
-                                        <div class="fw-bolder">Form submission successful!</div>
-                                        <p>To activate this form, sign up at</p>
-                                        <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                    </div>
+                                        <div class="fw-bolder">Obrigado pelo seu contato. Retornaremos em breve!</div>
+                                     </div>
                                 </div>
                                 <!-- Submit error message-->
                                 <!---->
                                 <!-- This is what your users will see when there is-->
                                 <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Desculpe, não conseguimos enviar o seu pedido.</div></div>
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+       </header>
         <!-- Icons Grid-->
         <section class="features-icons bg-light text-center">
             <div class="container">
@@ -121,8 +119,8 @@
         <section class="showcase">
             <div class="container-fluid p-0">
                 <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img animate__animated animate__backInRight" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text animate__animated animate__backInLeft">
                         <h2>EXPERIÊNCIA EM PINTURA E REFORMA</h2>
                         <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
                     </div>
